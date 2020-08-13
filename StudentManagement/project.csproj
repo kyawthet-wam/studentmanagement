@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB7E1D29-F067-4585-9DBF-7489F00FCF14}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.18\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCourse.Designer.cs">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScore.Designer.cs">
+      <DependentUpon>AddScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addstudent.Designer.cs">
+      <DependentUpon>Addstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COURSE.cs" />
+    <Compile Include="Datatable.cs" />
+    <Compile Include="EditCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCourse.Designer.cs">
+      <DependentUpon>EditCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Installer1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Installer1.Designer.cs">
+      <DependentUpon>Installer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginform.Designer.cs">
+      <DependentUpon>Loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.cs">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageCourse.Designer.cs">
+      <DependentUpon>ManageCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageScore.Designer.cs">
+      <DependentUpon>ManageScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStudent.Designer.cs">
+      <DependentUpon>ManageStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mydb.cs" />
+    <Compile Include="PrintCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintCourse.Designer.cs">
+      <DependentUpon>PrintCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintForm.Designer.cs">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveCourse.Designer.cs">
+      <DependentUpon>RemoveCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveScore.Designer.cs">
+      <DependentUpon>RemoveScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SCORE.cs" />
+    <Compile Include="STUDENT.cs" />
+    <Compile Include="Studentlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentlist.Designer.cs">
+      <DependentUpon>Studentlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDeleteStudent.Designer.cs">
+      <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCourse.resx">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScore.resx">
+      <DependentUpon>AddScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addstudent.resx">
+      <DependentUpon>Addstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCourse.resx">
+      <DependentUpon>EditCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginform.resx">
+      <DependentUpon>Loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageCourse.resx">
+      <DependentUpon>ManageCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageScore.resx">
+      <DependentUpon>ManageScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStudent.resx">
+      <DependentUpon>ManageStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintCourse.resx">
+      <DependentUpon>PrintCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForm.resx">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RemoveCourse.resx">
+      <DependentUpon>RemoveCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveScore.resx">
+      <DependentUpon>RemoveScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studentlist.resx">
+      <DependentUpon>Studentlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDeleteStudent.resx">
+      <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\user.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\201818.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\512px-Closed_Book_Icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\score-icon-png-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\uni.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
